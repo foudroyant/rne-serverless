@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+/Rne
+# local env files
+.env*.local
