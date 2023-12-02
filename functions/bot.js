@@ -1,4 +1,8 @@
-const { Telegraf } = require('telegraf');
+exports.handler = async function(event, context){
+    const params = event.queryStringParameters;
+    
+
+    const { Telegraf } = require('telegraf');
 const { message } = require('telegraf/filters');
 
 /*import { Telegraf } from 'telegraf';
@@ -1211,9 +1215,8 @@ const PF = [
   ]
 ];
 
-exports.handler = async function(event, context){
-    const params = event.queryStringParameters;
-    
+
+
     return {
         statusCode : 200,
         body : JSON.stringify({
